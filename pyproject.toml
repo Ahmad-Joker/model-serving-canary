@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "model-serving-canary"
+version = "0.1.0"
+description = "Offline candidate-model promotion gate"
+requires-python = ">=3.10"
+[project.scripts]
+model-serving-canary = "model_serving_canary.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
